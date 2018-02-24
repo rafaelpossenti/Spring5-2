@@ -12,7 +12,7 @@ public class SwimCoach implements Coach {
 	@Value("${foo.team}")
 	private String team;
 	
-	
+
 	public SwimCoach(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
 	}
@@ -21,7 +21,7 @@ public class SwimCoach implements Coach {
 	public String getDailyWorkout() {
 		return "Swim 1000 meters as a warm up";
 	}
-
+	
 	@Override
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
@@ -35,7 +35,4 @@ public class SwimCoach implements Coach {
 		return team;
 	}
 	
-	
-	
-
 }
